@@ -1,12 +1,73 @@
 <!doctype <!DOCTYPE html>
 <html>
-<head>
-    <title>Hello World</title>
-    <link rel="stylesheet"  href="css/styles.css" />
-    <script src="js/app.js"> </script>
-</head>
-<body>
-    <h1 class="color">Hello World</h1>
-</body>
-</html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>James Cochran</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+            <ul>
+                <li><a href=#>About</a></li>
+                <li><a href=#>Front End Development</a></li>
+                <li><a href=#>Python/SQL</a></li>
+                <li><a href=#>UX</a></li>
+                <li><a href=#>Beekeeping</a></li>
+                <li><a href=#>Collector of Hobbies</a></li>
+                <li><a href=#>Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Main image -->
+    <div class="hero-img">
+        <!-- <img src="img/JMC-Chow Lan Lake.jpg" alt="Hi, I'm James"> -->
+    </div>
+
+    <div class="feedback">
+        <button onclick=openForm() id="farm-issue">
+            <h3>What's Your Farm Issue?</h3>
+        </Button>
+    </div>
+    <!-- End Main Image -->
+    <!-- What's eating you pop-up form -->
+    <div class="form-popup" id="myForm" style="display: none;">
+        <form " class=" form-container">
+            <h1>What's Your Farm Issue?</h1>
+            <div class="form-field">
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" placeholder="First Name" name="firstname" required>
+            </div>
+            <div class="form-field">
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" placeholder="Last Name" name="lastname" required>
+            </div>
+            <div class="form-field">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="issue"><b>What's Eating You?</b></label>
+            </div>
+            <div class="form-field">
+                <textarea name="issue" form="usrform">Tell us what your farm issue is.</textarea>
+            </div>
+
+            <div class="form-field">
+                <button type="submit" class="btn">submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <!-- End form -->
+    <footer>
+    </footer>
+</body>
+<script src="js/app.js"> </script>
+
+</html>

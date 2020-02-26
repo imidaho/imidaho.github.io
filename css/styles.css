@@ -1,4 +1,160 @@
-.color {
-    color: #0000ff;
+/* 
+Deep Green: rgba(11, 32, 39, 1);
+Orange: rgba(240, 100, 73, 1);
+Light Gray: rgba(207, 215, 199, 1);
+Blueish Gray: rgba(92, 103, 132, 1);
+Off-White: rgba(237, 230, 227, 1); */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, li,label,button, input{
+    font-family: "Brandon Grotesque";
+    text-transform: uppercase;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+p, textarea {
+    font-family: "open sans";
+}
 
+header {
+    background-color:rgba(11, 32, 39, 1);
+    padding: 20px 0; 
+}
+footer {
+    background-color: rgba(11, 32, 39, 1);
+    margin: 0;
+    height: 10vh;
+}
+button{
+    background-color: rgba(240, 100, 73, 1);
+    color: rgba(237, 230, 227, 1);
+    border: none;
+    height:10vh; 
+    padding:1em;
+}
+button:hover{
+    background-color: #332a86;
+    border-color: #70cde3;
+}
+/*classes*/
+.main-nav {
+    flex-wrap: wrap;
+}
+.main-nav li{
+    margin: 10px;
+    padding:21px;
+    color: rgba(237, 230, 227, 1);
+    border:2px #332a86;
+    display: block;
+}
+.main-nav a {
+    color:rgba(237, 230, 227, 1);
+    text-decoration: none;
+}
+.main-nav a:hover{
+    color:rgba(240, 100, 73, 1);
+    background-color: rgba(237, 230, 227, 1);
+    border-radius: 5%;
+    border: 1px solid;
+    border-color: rgba(240, 100, 73, 1);
+    padding:2px;
+    margin : -3px;
+}
+ .hero-img{
+    background-size: cover;
+    background-color:  #332a86;
+    background-image: url("../img/JMC-Chow Lan Lake.jpg");
+    background-position: right 0% bottom 26%;
+    height: 70vh; 
+    background-repeat: no-repeat;
+}
+/* .name-and-logo { 
+    width: 80%;
+    position:absolute;
+    top: 50%;
+    left: 53%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}*/
+.feedback {
+    height: 10vh;
+    text-align: center;
+    background-color: rgba(92, 103, 132, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feedback a{
+    text-decoration: None;
+    Color:white;
+}
+.form-popup {
+    display: none;
+}
+
+.form-popup h1, 
+.form-popup label {
+    color: #332a86;
+    text-align: center
+}
+.btn{
+    color: white;
+}
+.form-field{
+    padding: 1em;
+    text-align: center;
+}
+/* Mobile devices*/ 
+@media (max-width: 850px) { 
+    
+    header {
+        height:30vh;
+        padding: 15px 114px;
+    }
+    ul { 
+        height:20vh;
+        flex-wrap: wrap
+    }   
+    a {
+        size: 1.5em;
+    }
+    button{
+        height:10vh; 
+    } 
+    footer {
+        height: 10vh;
+    }
+    .hero-img{
+        background-position: right 0% bottom 19%;
+        height: 50vh;
+    }
+    .main-nav {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+ }
+ @media (max-width: 690px) { 
+    .main-nav li{
+        padding:0px 10px;
+    }
+}   
+ @media (max-width: 455px) { 
+    header {
+        height:30vh;
+        padding: 0px 88px;
+    }
+    .main-nav li{
+        padding:0px;
+    }
 }
