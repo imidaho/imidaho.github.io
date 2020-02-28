@@ -1,0 +1,47 @@
+@import "_palette.scss";
+
+
+/* Mobile devices*/ 
+@media (max-width: 850px) { 
+    
+    header {
+        height:30vh;
+        padding: 15px 114px;
+    }
+    ul { 
+        height:20vh;
+        flex-wrap: wrap
+    }   
+    a {
+        size: 1.5em;
+    }
+    button{
+        height:10vh; 
+    } 
+    footer {
+        height: 10vh;
+    }
+    .hero-img{
+        background-position: right 0% bottom 19%;
+        height: 50vh;
+    }
+    .main-nav {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+ }
+ @media (max-width: 690px) { 
+    .main-nav li{
+        padding:0px 10px;
+    }
+}   
+ @media (max-width: 455px) { 
+    header {
+        height:30vh;
+        padding: 0px 88px;
+    }
+    .main-nav li{
+        padding:0px;
+    }
+}
