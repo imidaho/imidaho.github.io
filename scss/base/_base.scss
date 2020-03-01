@@ -1,7 +1,10 @@
+@import "_palette.scss";
+
 * {
     box-sizing: border-box;
     margin:0;
     padding: 0;
+
 }
 
 ul {
@@ -12,4 +15,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     height: 10vh;
+}
+body{
+    background-color: $color1;
 }

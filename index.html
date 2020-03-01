@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="nav-container">
             <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
             <input id="toggle" type="checkbox">
 
@@ -32,48 +32,14 @@
                 <a class="nav-item" href=#>Contact</a>
             </nav>
         </div>
+        <div class="intro">
+            <h1>Hi! I'm James.</h1>
+        </div>
     </header>
     <!-- Main image -->
     <div class="hero-img">
         <!-- <img src="img/JMC-Chow Lan Lake.jpg" alt="Hi, I'm James"> -->
     </div>
-
-    <div class="feedback">
-        <button onclick=openForm() id="farm-issue">
-            <h3>What's Your Farm Issue?</h3>
-        </Button>
-    </div>
-    <!-- End Main Image -->
-    <!-- What's eating you pop-up form -->
-    <div class="form-popup" id="myForm" style="display: none;">
-        <form " class=" form-container">
-            <h1>What's Your Farm Issue?</h1>
-            <div class="form-field">
-                <label for="firstname"><b>First Name</b></label>
-                <input type="text" placeholder="First Name" name="firstname" required>
-            </div>
-            <div class="form-field">
-                <label for="lastname"><b>Last Name</b></label>
-                <input type="text" placeholder="Last Name" name="lastname" required>
-            </div>
-            <div class="form-field">
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-            </div>
-            <div class="form-field">
-                <label for="issue"><b>What's Eating You?</b></label>
-            </div>
-            <div class="form-field">
-                <textarea name="issue" form="usrform">Tell us what your farm issue is.</textarea>
-            </div>
-
-            <div class="form-field">
-                <button type="submit" class="btn">submit</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
-            </div>
-        </form>
-    </div>
-    <!-- End form -->
     <footer>
     </footer>
 </body>
