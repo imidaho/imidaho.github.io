@@ -69,6 +69,7 @@ $transition-delay: 0.05s;
       opacity: 1;
       transform: scaleY(1);
       transition: $transition-duration, opacity 0.1s;
+      text-decoration: none;
 
       // Setting delays for the nav items in open transition
       @for $i from 1 through $items {
