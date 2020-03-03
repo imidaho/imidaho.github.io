@@ -1,4 +1,8 @@
-p, textarea {
+@font-face {
+    font-family: Brandon Grotesque;
+    src: url("../../Fonts/BrandonGrotesque-Bold.otf") format("opentype");
+
+}p, textarea {
     font-family: "open sans";
 }
 h1, h2, h3, h4, h5, h6, a, label, button, input{
@@ -9,3 +13,5 @@ h1, h2, h3, h4, h5, h6, a, label, button, input{
 a {
     text-decoration: none;
 }
+
+

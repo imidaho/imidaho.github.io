@@ -649,6 +649,10 @@ button:hover {
   transition: 0.5s;
 }
 
+@font-face {
+  font-family: Brandon Grotesque;
+  src: url("../../Fonts/BrandonGrotesque-Bold.otf") format("opentype");
+}
 p, textarea {
   font-family: "open sans";
 }
