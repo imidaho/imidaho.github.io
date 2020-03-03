@@ -21,6 +21,10 @@ body {
   background-color: #0b2027;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -480,6 +484,7 @@ button:hover {
   opacity: 1;
   transform: scaleY(1);
   transition: 0.5s, opacity 0.1s;
+  text-decoration: none;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(1) {
   transition-delay: 0.3s;
