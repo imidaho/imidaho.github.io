@@ -61,7 +61,7 @@ $transition-delay: 0.05s;
 
     // Restoring nav items from "lines" in the menu icon
     .nav-item {
-      color: $color2;
+      color: $color3;
       letter-spacing: 0;
       height: 40px;
       line-height: 40px;
@@ -69,7 +69,6 @@ $transition-delay: 0.05s;
       opacity: 1;
       transform: scaleY(1);
       transition: $transition-duration, opacity 0.1s;
-      text-decoration: none;
       
 
       // Setting delays for the nav items in open transition
@@ -96,7 +95,7 @@ $transition-delay: 0.05s;
 .button-toggle {
   position: absolute;
   display: flex;
-  width: 20px;
+  width: 26px;
   height: 20px;
   margin: 25px;
   background-color: transparent;
@@ -160,6 +159,7 @@ $transition-delay: 0.05s;
   white-space: nowrap;
   transform: scaleY(0.2);
   transition: $transition-duration, opacity 1s;
+  
 
   // Setting delays for the nav items in close transition
   @for $i from 1 through $items {
@@ -184,7 +184,7 @@ $transition-delay: 0.05s;
 
   // Adjusting from the fourth element onwards
   &:nth-child(n + 4) {
-    letter-spacing: -8px;
+    letter-spacing: -7px;
     margin-top: -7px;
     opacity: 0;
   }
